@@ -1,0 +1,184 @@
+<html>
+	<body>
+		<link rel = "stylesheet" type = "text/css" href = "./stylesheets/homeStyle.css" />
+		<link rel = "stylesheet" type = "text/css" href = "./stylesheets/transitionsHome.css" />
+		<div class = "aboutBackground" id = "aboutBackground" name = "aboutBackground"></div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+			  // Add smooth scrolling to all links
+			  $("a").on('click', function(event) {
+
+			    // Make sure this.hash has a value before overriding default behavior
+			    if (this.hash !== "") {
+			      // Prevent default anchor click behavior
+			      event.preventDefault();
+
+			      // Store hash
+			      var hash = this.hash;
+
+			      // Using jQuery's animate() method to add smooth page scroll
+			      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			      $('html, body').animate({
+			        scrollTop: $(hash).offset().top
+			      }, 1000, function(){
+			   
+			        // Add hash (#) to URL when done scrolling (default click behavior)
+			        window.location.hash = hash;
+			      });
+			    } // End if
+			  });
+			});
+		</script>
+
+		<div class = "wrapper">
+
+			<div class = "navBarHolder">
+				<div class = "navBar">
+					<a href = "#photosSection">Photos</a>
+					<a href = "#contactSection">Contact</a>
+					<a href = "#projectsSection">Projects</a>
+					<a href = "#aboutSection">About</a>
+				</div>
+			</div>
+
+			<div class = "individualContent" id = "aboutSection">
+				<br>
+				<h1 class = "heading">About</h1>
+				<hr class = "headingLine">
+
+				<img src ="./images/myPicture.jpg" class ="myPic">
+
+				<p class = "about">Hi, my name is Manpreet Singh.
+				<br>
+				I am currently a Junior at San Jose State University pursuing a Software Engineering major.
+				<br>
+				<u>Experienced in:</u> HTML, CSS, Javascript, PHP, Java, and Swift
+				<br>
+				I created this website from scratch to host my projects and showcase my talents.
+				<br>
+				In my free time I enjoy videogames, taking photos, and admiring cars.
+				<br>
+				My friends would describe me as curious, motivated, and responsible.
+				<br>
+				I am actively seeking an internship, and my resume will be available upon request.
+				</p>
+			</div>
+
+			<div class = "individualContent">
+				<h1 class = "postHeading">Programming</h1>
+				<p class = "postText">
+					All throughout highschool, I really didn't know the career path I wanted to go down. I was scared, didn't know what was right or wrong. Everyone had their opinions, and I just didn't know. I took numerous science classes, with the possibility of heading into the medical field. Then finally, junior year came around. A new class was being offered, AP Computer Science. I thought, "Why not? Wouldn't hurt." That was one of the best decisions of my life. I enjoyed the thrill of solving programs, the struggles of finding a solution, and harnessing the power of technology.
+				</p>
+				<h1 class = "postHeading">Videogames</h1>
+				<p class = "postText">
+					Video games have been in my life since I was a child. They have always lifted my spirits and helped my creative juices flow. I love playing competitive video games such as League of Legends, Fornite, and Battlegrounds. I also enjoy single player games such as the Far Cry series and Dark Souls.
+				</p>
+
+				<h1 class = "postHeading">Photography</h1>
+				<p class = "postText">
+					Photography is one of my newest hobbies, and I am glad to have found it. I enjoy being creative, and photography is a great method of letting that creativity flow. Although I am fairly new, I enjoy messing around with different angles, aperatures, and shutter speeds. I would love to start taking some more low light shots.
+				</p>
+
+				<h1 class = "postHeading">Cars</h1>
+				<p class= "postText">
+					Cars, to most people they are simply a means of getting from point A to point B. In my case, its different. I enjoy admiring the sounds the engine and exhausts make. I drool over the sight of a properly built car. Most of all, I admire those who go out and track their vehicles. There is so much precision involved in driving at fast speeds, and I admire those who do it flawlessly. Something about seeing an Aventador whizz by just gives me the chills.
+				</p>
+
+			</div>
+
+		</div>
+
+		<div class ="wrapper">
+			<div class = "individualContent" id = "projectsSection">
+				<br>
+				<h1 class = "heading">Projects</h1>
+				<hr class = "headingLine">
+
+				<div class = "posts">
+					<h1 class = "postHeading">Basic Calculator</h1>
+					<p class = "postText">Basic four operation calculator that deals with both integers and decimals.</p>
+					<p class = "postText">Current Known bugs: Must enter in format "0.##" when dealing with decimals under 1.</p>
+				</div>
+
+				<div class = "posts">
+					<h1 class = "postHeading">Spartan Tutor</h1>
+					<p class = "postText">Created as a school project, learned about xCode and programming in Swift.</p>
+					<p class = "postText">App Features currently are logging in with a created account, creating a new user, making appointments, and updating user information.</p>
+					<p class = "postText">The video below showcases all of the features of the app.</p>
+
+					<br>
+
+					<center>
+						<video width="800" height="450" controls>
+		  					<source src="https://www.dropbox.com/s/0syyvzjx89lkuod/spartantutorDemo.mp4?dl=1" type="video/mp4">
+		  					Your browser does not support the video tag.
+						</video>
+					</center>
+				</div>
+			</div>
+		</div>
+
+		<div class ="wrapper">
+			<div class = "individualContent" id = "contactSection">
+				<br>
+				<h1 class = "heading">Contact</h1>
+				<hr class = "headingLine">
+
+				<div class = "posts">
+					<h1 class = "postHeading">LinkedIn</h1>
+
+					<p class = "postText">
+						<a href = "https://www.linkedin.com/in/manpreetsingh96" target="_blank">
+							<img src = "images/linkedinLogo.png" class ="linkedinLogo">
+						</a>
+					</p>
+					<p class = "postText">In case the link above does not work, please copy paste the following link into your web browser:</p>
+					<p class = "postText">www.linkedin.com/in/manpreetsingh96</p>
+				</div>
+
+				<div class = "posts">
+					<h1 class = "postHeading">E-mail</h1>
+
+					<p class = "postText">
+						<a href="mailto:manpreet.singh96@yahoo.com?Subject=Hello" target="_top">
+							<img src ="images/mail.png" class ="mailLogo">
+						</a>
+					</p>
+
+					<p class = "postText">The link above will only work if you have mail installed, either on Mac OSX or Microsoft Outlook.</p>
+					<p class = "postText">Please send all emails to manpreet.singh96@yahoo.com</p>
+				</div>
+			</div>
+		</div>
+
+		<div class = "wrapper">
+			<div class = "individualContent" id = "photosSection">
+			<br>
+			<h1 class = "heading">Photos</h1>
+			<hr class = "headingLine">
+
+			<div class = "posts">
+				<center><h1 class = "postHeading">Photo portfolio will be posted here. All credits reserved.</h1></center>
+				
+				<p class = "photoPost">Photo taken in Portland Oregon, by Multonomah Falls</p>
+				<p class = "photoPost">
+					<img src = "./images/photo_1.jpg" class = "postedPhotos">
+				</p>
+
+				<br>
+
+				<p class = "photoPost">Photo taken at Canery Row, isn't she a beaut?</p>
+				<p class = "photoPost">
+					<img src = "./images/photo_2.jpg" class = "postedPhotos">
+				</p>
+
+			</div>
+
+			<br>
+			<br>
+			<br>
+		</div>
+	</body>
+</html>

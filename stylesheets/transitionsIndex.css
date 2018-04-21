@@ -1,0 +1,150 @@
+.skylineBackgroundAnimated
+{
+	animation-duration: 4s;
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	transition-timing-function: ease-in;
+}
+
+.caption
+{
+	animation-duration: 3s;
+	animation-name: fallDownCaption;
+	animation-iteration-count: 1;
+	transition-timing-function: ease-in;
+}
+
+.buttonHolder
+{
+	animation-duration: 3s;
+	animation-name: fallDownButton;
+	animation-iteration-count: 1;
+	transition-timing-function: ease-in
+}
+
+.timeDateHolderAnimated
+{
+	animation-duration: 3s;
+	animation-name: riseTime;
+	animation-iteration-count: 1;
+	transition-timing-function: ease-in;
+}
+
+.skylineBackgroundExit
+{
+	animation-duration: 3s;
+	animation-name: fadeOut;
+	animation-iteration-count: 1;
+	transition-timing-function: ease-in;
+}
+
+.captionExit
+{
+	animation-duration: 3s;
+	animation-name: slideUpCaption;
+	animation-iteration-count: 1;
+	transition-timing-function: ease-in;
+}
+
+.buttonHolderExit
+{
+	animation-duration: 3s;
+	animation-name: slideUpButton;
+	animation-iteration-count: 1;
+	transition-timing-function: ease-in;
+}
+
+.timeDateHolderExit
+{
+	animation-duration: 3s;
+	animation-name: slideDownTime;
+	animation-iteration-count: 1;
+	transition-timing-function: ease-in;	
+}
+
+@keyframes slideDownTime
+{
+	from {
+		top: 2%;
+	}
+
+	to {
+		top: 120%;
+	}
+}
+
+@keyframes slideUpButton
+{
+	from {
+		top: 65%;
+	}
+
+	to {
+		top: -50%;
+	}
+}
+
+@keyframes slideUpCaption
+{
+	from {
+		top: 30%;
+	}
+
+	to {
+		top: -50%;
+	}
+}
+@keyframes fadeOut
+{
+	from{
+		opacity: 1;
+	}
+
+	to{
+		opacity: 0;
+	}
+}
+
+@keyframes fadeIn 
+{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fallDownCaption 
+{
+	from {
+		top: -50%;
+	}
+
+	to{
+		top: 30%;
+	}
+}
+
+@keyframes fallDownButton 
+{
+	from {
+		top: -50%;
+	}
+
+	to{
+		top: 65%;
+	}
+}
+
+@keyframes riseTime 
+{
+	from {
+		top: 120%;
+	}
+
+	to{
+		top: 2%;
+	}
+}
