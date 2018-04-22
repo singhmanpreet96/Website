@@ -10,7 +10,7 @@ body, html
 .wrapper
 {
 	z-index: 1;
-	width: 1300px;
+	width: 1400px;
 	height: auto;
 	margin-top: 5%;
 	margin-left: auto;
@@ -21,23 +21,24 @@ body, html
 .navBar
 {
 	position: fixed;
+	background-color: #27303f;
+	width: 100%;
 	top: 0;
 }
 
-.navBarHolder
+.navBar a 
 {
-	margin-left: 60%;
-}
-
-.navBar a {
     display: block;
-    float: right;
+    float: left;
     background-color: #27303f;
     color: #fff;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .navBar a:hover {
